@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="man">
+        <xs:sequence>
+            <xs:element name="initials">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([a-zA-Z\s]*){3}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="status">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="ex"/>
+                        <xs:enumeration value="current"/>
+                        <xs:enumeration value="future"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="email">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern
+                                value="([0-9a-zA-Z]([-_.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-_\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="color_of_hair">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="blond"/>
+                        <xs:enumeration value="brown"/>
+                        <xs:enumeration value="black"/>
+                        <xs:enumeration value="ginger red"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="color_of_eyes">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="blue"/>
+                        <xs:enumeration value="gray"/>
+                        <xs:enumeration value="green"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="height">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="55"/>
+                        <xs:maxInclusive value="280"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ex">
+        <xs:complexContent>
+            <xs:extension base="man">
+                <xs:sequence>
+                    <xs:element name="date_marriage" type="xs:date"/>
+                    <xs:element name="date_divorce" type="xs:date"/>
+                    <xs:element name="reason_divorce" type="xs:string" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="current">
+        <xs:complexContent>
+            <xs:extension base="man">
+                <xs:sequence>
+                    <xs:element name="date_marriage" type="xs:date"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="future">
+        <xs:complexContent>
+            <xs:extension base="man">
+                <xs:sequence>
+                    <xs:element name="attractiveness" type="xs:integer" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="registerEX">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="man" type="man" maxOccurs="200"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

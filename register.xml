@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<registerEX xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="register.xsd">
+    <man xsi:type="ex">
+        <initials>Melnyk Oleksandr Andriyovych</initials>
+        <status>ex</status>
+        <email>melnykxxl@gmail.com</email>
+        <color_of_hair>blond</color_of_hair>
+        <color_of_eyes>blue</color_of_eyes>
+        <height>182</height>
+        <date_marriage>2016-02-03</date_marriage>
+        <date_divorce>2017-12-01</date_divorce>
+    </man>
+    <man xsi:type="ex">
+        <initials>Kovalenko Mykhailo Igorovich</initials>
+        <status>ex</status>
+        <email>mykhailo@gmail.com</email>
+        <color_of_hair>blond</color_of_hair>
+        <color_of_eyes>green</color_of_eyes>
+        <height>185</height>
+        <date_marriage>2017-12-07</date_marriage>
+        <date_divorce>2019-03-08</date_divorce>
+        <reason_divorce>unknown</reason_divorce>
+    </man>
+    <man xsi:type="ex">
+        <initials>Tkachenko Andrii Oleksiyovich</initials>
+        <status>ex</status>
+        <email>andrtkach@gmail.com</email>
+        <color_of_hair>black</color_of_hair>
+        <color_of_eyes>blue</color_of_eyes>
+        <height>186</height>
+        <date_marriage>2019-11-06</date_marriage>
+        <date_divorce>2020-10-08</date_divorce>
+    </man>
+    <man xsi:type="current">
+        <initials>Kovalchuk Andrii Olegovich</initials>
+        <status>current</status>
+        <email>kovalchuchka@gmail.com</email>
+        <color_of_hair>brown</color_of_hair>
+        <color_of_eyes>green</color_of_eyes>
+        <height>180</height>
+        <date_marriage>2020-12-02</date_marriage>
+    </man>
+    <man xsi:type="ex">
+        <initials>Koval Ihor Andriyovich</initials>
+        <status>ex</status>
+        <email>Koval_Ihor@gmail.com</email>
+        <color_of_hair>blond</color_of_hair>
+        <color_of_eyes>gray</color_of_eyes>
+        <height>185</height>
+        <date_marriage>2014-02-06</date_marriage>
+        <date_divorce>2015-01-05</date_divorce>
+        <reason_divorce>bad husband</reason_divorce>
+    </man>
+    <man xsi:type="future">
+        <initials>Oliinyk Oleg Sergitovich</initials>
+        <status>future</status>
+        <email>oleg.oliinykchek@gmail.com</email>
+        <color_of_hair>blond</color_of_hair>
+        <color_of_eyes>green</color_of_eyes>
+        <height>179</height>
+        <attractiveness> 92</attractiveness>
+    </man>
+    <man xsi:type="future">
+        <initials>Moroz Artem Vladuslavovich</initials>
+        <status>future</status>
+        <email>moroz.artem@gmail.com</email>
+        <color_of_hair>brown</color_of_hair>
+        <color_of_eyes>blue</color_of_eyes>
+        <height>181</height>
+    </man>
+    <man xsi:type="future">
+        <initials>Kostiuk Illia Ruslanovych</initials>
+        <status>future</status>
+        <email>hi_welcom_home@ukr.net</email>
+        <color_of_hair>black</color_of_hair>
+        <color_of_eyes>blue</color_of_eyes>
+        <height>179</height>
+        <attractiveness>87</attractiveness>
+    </man>
+    <man xsi:type="future">
+        <initials>Boiko Andrii Oleksandrovych</initials>
+        <status>future</status>
+        <email>andr.boiko@gmail.com</email>
+        <color_of_hair>blond</color_of_hair>
+        <color_of_eyes>gray</color_of_eyes>
+        <height>181</height>
+    </man>
+</registerEX>
