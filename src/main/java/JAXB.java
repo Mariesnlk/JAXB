@@ -58,7 +58,7 @@ public class JAXB {
             m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             // Write to System.out
-            m.marshal(registerEX, System.out);
+//            m.marshal(registerEX, System.out);
 
             // Write to File
             File outFile = new File(JavaToXml_FILE);
@@ -83,6 +83,8 @@ public class JAXB {
                             man.getColor_of_eyes() + "\n" + "height is " + man.getHeight() + "\n" +
                             "data marriage is " + man.getDate_marriage() + "\n" + "data divorce is " +
                             man.getDate_divorce() + "\n" + "attractiveness is " + man.getAttractiveness());
+                } else{
+                    System.out.println("There is no such man");
                 }
             }
         } catch (Exception e) {
