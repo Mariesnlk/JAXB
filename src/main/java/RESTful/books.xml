@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="cooking">
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+
+    <book category="children">
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+
+    <book category="web">
+        <title lang="en">Learning XML</title>
+        <author>Erik T. Ray</author>
+        <year>2003</year>
+        <price>39.95</price>
+    </book>
+
+    <book category="children">
+        <title lang="en">The Lord of the Rings</title>
+        <author>John Ronald Reuel Tolkien</author>
+        <year>2012</year>
+        <price>35.99</price>
+    </book>
+
+    <book category="children">
+        <title lang="en">The Chronicles of Narnia</title>
+        <author>CS Lewis</author>
+        <year>2016</year>
+        <price>20.99</price>
+    </book>
+
+    <book category="children">
+        <title lang="en">Harry Potter 2</title>
+        <author>J K. Rowling</author>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+</bookstore>
